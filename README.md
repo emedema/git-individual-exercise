@@ -25,11 +25,11 @@ String sorting sorts a string from first in the alphabet to last in the alphabet
 
 **Note:** The string sort algorithm converts all strings to lowercase and only returns lowercase strings.
 
-```
+
 | Before | After |
 | --- | ----------- |
 | testing | eginstt |
-```
+
 
 This is implemented via merge sort.
 

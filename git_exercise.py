@@ -79,6 +79,7 @@ def merge_sort_string(array):
     #split array
     middle = len(array) // 2
 
+    #return with recursive calls
     return merge(
                 left = sort_integer(array[:middle]),
                 right = sort_integer(array[middle:]))

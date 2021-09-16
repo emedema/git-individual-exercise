@@ -61,6 +61,7 @@ def sort_string(word):
     '''
     Implementation of sorting a string via merge sort
     '''
+    #split word into a character array
     chars = list(word.lower())
     result = ""
 

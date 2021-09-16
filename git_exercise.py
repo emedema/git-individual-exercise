@@ -56,3 +56,29 @@ def sort_integer(array):
     return merge(
                 left = sort_integer(array[:middle]),
                 right = sort_integer(array[middle:]))
+
+def sort_string(word):
+    '''
+    Implementation of sorting a string via merge sort
+    '''
+    chars = list(word.lower())
+    result = ""
+
+    #now that we have a array of characters, we can use merge sort
+    sorted_chars = merge_sort_string(chars)
+    #join characters back into string
+    return result.join(sorted_chars)
+
+
+def merge_sort_string(array):
+
+    if len(array) < 2:
+        #already sorted
+        return array
+
+    #split array
+    middle = len(array) // 2
+
+    return merge(
+                left = sort_integer(array[:middle]),
+                right = sort_integer(array[middle:]))

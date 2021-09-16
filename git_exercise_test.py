@@ -1,6 +1,6 @@
 import unittest
 
-from git_exercise import sort_integer
+from git_exercise import sort_integer, sort_string
 
 class TestSort(unittest.TestCase):
 
@@ -20,6 +20,21 @@ class TestSort(unittest.TestCase):
         array = [5]
 
         self.assertEqual(array, sort_integer(array))
+    
+    def test_sort_string(self):
+        '''
+        Test to see if the string is sorting correctly
+        '''
+        word = 'testing'
+        sorted_word = 'eginstt'
+        self.assertEqual(sorted_word, sort_string(word))
+    
+    def test_sort_string_length(self):
+        '''
+        Test that if a string is less than < 2 characters long it gets returned
+        '''
+        word = 't'
+        self.assertEqual(word, sort_string(word))
 
 if __name__ == "__main__":
      unittest.main()
